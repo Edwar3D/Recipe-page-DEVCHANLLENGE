@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+
+font-family: 'Playfair Display', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    padding: 50px 0px;
+    width: 75%;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.introduction {
+    color: #4F4F4F;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    padding-right: 250px;
+}
+
+.introduction svg {
+    color: #C4C4C4;
+    padding: 2px 0px;
+}
+
+.introduction .text {
+    font-weight: 500;
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+.image-presentation {
+    width: 100%;
+}
+
+.container {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.recipe h2 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.recipe h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #333333;
+    margin-bottom: 1.25rem;
+}
+
+.list-ingredients {
+    list-style: none;
+    margin-bottom: 1.5625rem;
+}
+
+.list-ingredients .list-item {
+    margin-bottom: 0.875rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.list-ingredients .list-item input {
+    margin-right: 10px;
+}
+
+.list-ingredients .list-item span {
+    font-weight: 400;
+    color: #333333;
+}
+
+.list-ingredients .list-item span i {
+    font-weight: 500;
+}
+
+.information {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 50px 40px;
+    min-width: 215px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-left: 150px;
+}
+
+.information .row {
+    display: flex;
+}
+
+.information .row .icon {
+    height: 1.5rem;
+}
+
+.information .row div {
+    margin-left: 0.625rem;
+}
+
+.information .row .title-information {
+    color: #BDBDBD;
+    font-weight: 700;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+}
+
+.information .row .value {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #333333;
+}
+
+.orange {
+    color: #F2994A;
+}
+.list-instructions{
+   list-style: none;
+}
+.list-instructions .list-item{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1.875rem;
+}
+.list-instructions .list-item .instruction{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+}
+ .list-instructions .list-item .item-number{
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background-color: #F2994A;
+    border-radius: 6px;
+}
+.list-instructions .list-item .item-number span{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ffff;
+}
+.source{
+    font-style: italic;
+    font-weight: 400;
+    color: #BDBDBD;
+    margin-top: 3.125rem;
+}
+
+
+footer p {
+    text-align: center;
+}
+
+@media (max-width:900px) {
+    .introduction{
+        padding-right: 0;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .information{
+        margin-left: 0;
+        box-shadow: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .information .yields{
+        width: 100%;
+    }
+}
+@media (max-width:750px) {
+    html{
+        font-size: 14px;
+    }
+    main{
+        width: 100%;
+        padding: 30px 10px;
+    }
+}
