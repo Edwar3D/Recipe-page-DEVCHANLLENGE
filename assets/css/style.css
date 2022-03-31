@@ -38,14 +38,10 @@ h1, h2, h3 {
 .introduction {
     color: #4F4F4F;
     display: flex;
+    align-items: baseline;
     gap: 10px;
     margin-bottom: 40px;
     padding-right: 250px;
-}
-
-.introduction svg {
-    color: #C4C4C4;
-    padding: 2px 0px;
 }
 
 .introduction .text {
@@ -117,9 +113,6 @@ h1, h2, h3 {
     display: flex;
 }
 
-.information .row .icon {
-    height: 1.5rem;
-}
 
 .information .row div {
     margin-left: 0.625rem;
@@ -139,8 +132,9 @@ h1, h2, h3 {
 }
 
 .orange {
-    color: #F2994A;
+    color: #F2994A !important;
 }
+
 .list-instructions{
    list-style: none;
 }
